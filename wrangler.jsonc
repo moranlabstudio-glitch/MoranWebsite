@@ -6,5 +6,10 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
-  "main": ".open-next/worker.js"
+  "main": ".open-next/worker.js",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "moraninfo.com", "custom_domain": true },
+    { "pattern": "www.moraninfo.com", "custom_domain": true }
+  ]
 }

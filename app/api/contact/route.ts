@@ -1,7 +1,5 @@
 import { Resend } from "resend";
 
-export const runtime = "edge";
-
 const NOTIFY_TO = process.env.CONTACT_EMAIL || "moranlab.studio@gmail.com";
 const FROM_ADDRESS = process.env.RESEND_FROM || "MORAN 網站通知 <onboarding@resend.dev>";
 
