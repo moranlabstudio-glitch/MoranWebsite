@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# OpenNext / Cloudflare build output
+.open-next/
+
+# environment variables
+.env
+.env.*
+
+# misc
+.DS_Store
+*.tsbuildinfo
+
+# claude code
+.claude/
+
+# wrangler
+.wrangler/

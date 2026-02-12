@@ -1,0 +1,314 @@
+.methodPage{
+  /* 只影響 method 頁 */
+  background:
+    radial-gradient(900px 520px at 0% 0%, rgba(79,93,184,.08), transparent 65%),
+    radial-gradient(900px 520px at 100% 0%, rgba(126,140,212,.07), transparent 65%),
+    linear-gradient(180deg, #f3f4fa 0%, #eef0f7 55%, #edf0f8 100%);
+}
+
+/* ============ Hero ============ */
+.hero{
+  margin-top: 18px;
+  border-radius: 26px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 26px 70px rgba(15,23,42,.10);
+  overflow: hidden;
+}
+
+.heroGrid{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 0;
+}
+
+.visual{
+  position: relative;
+  padding: 26px;
+  background:
+    radial-gradient(520px 260px at 20% 20%, rgba(255,255,255,.65), transparent 60%),
+    linear-gradient(145deg, #edf2ff 0%, #d8e0fb 45%, #c9d3fb 100%);
+  border-right: 1px solid rgba(15,23,42,.06);
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.visual::before{
+  content:"";
+  position:absolute;
+  inset:-40px;
+  background:
+    radial-gradient(420px 260px at 70% 30%, rgba(79,93,184,.25), transparent 65%),
+    radial-gradient(360px 240px at 30% 80%, rgba(126,140,212,.20), transparent 70%);
+  opacity:.55;
+  pointer-events:none;
+}
+
+.visualInner{
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(79,93,184,.18);
+  background: rgba(255,255,255,.55);
+  padding: 18px 18px 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.visualTitle{
+  font-weight: 800;
+  font-size: 14px;
+  color: rgba(15,23,42,.90);
+  letter-spacing: -.01em;
+}
+
+.visualHint{
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(15,23,42,.55);
+  line-height: 1.6;
+}
+
+.content{
+  padding: 34px 34px 30px;
+}
+
+.badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(79,93,184,.10);
+  border: 1px solid rgba(79,93,184,.16);
+  color: #3d4a9e;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.title{
+  margin: 14px 0 10px;
+  font-size: clamp(24px, 2.2vw, 30px);
+  line-height: 1.25;
+  font-weight: 800;
+  color: rgba(15,23,42,.95);
+  letter-spacing: -.03em;
+}
+
+.desc{
+  margin: 0;
+  max-width: 54ch;
+  color: rgba(51,65,85,.92);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* 三點優勢：改成「資訊卡」而不是散文 */
+.points{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 10px;
+}
+
+.point{
+  padding: 12px 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.70);
+  border: 1px solid rgba(15,23,42,.06);
+  box-shadow: 0 10px 26px rgba(15,23,42,.06);
+}
+
+.pointK{
+  font-weight: 900;
+  font-size: 14px;
+  color: rgba(15,23,42,.86);
+  margin-bottom: 4px;
+}
+
+.pointV{
+  color: rgba(71,85,105,.92);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.actions{
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ============ Steps ============ */
+.steps{
+  margin-top: 34px;
+}
+
+.stepsHead{
+  margin-bottom: 14px;
+}
+
+.stepsTitle{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  color: rgba(15,23,42,.95);
+  letter-spacing: -.02em;
+}
+
+.stepsSub{
+  margin: 8px 0 0;
+  color: rgba(100,116,139,.95);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.stepsGrid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 16px;
+}
+
+.stepCard{
+  position: relative;
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(15,23,42,.08);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 16px 38px rgba(15,23,42,.08);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  overflow: hidden;
+}
+
+.stepCard::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(240px 120px at 10% 0%, rgba(79,93,184,.14), transparent 65%),
+    radial-gradient(220px 140px at 90% 20%, rgba(126,140,212,.12), transparent 65%);
+  opacity: .6;
+  pointer-events:none;
+}
+
+.stepCard:hover{
+  transform: translateY(-4px);
+  border-color: rgba(79,93,184,.22);
+  box-shadow: 0 22px 56px rgba(15,23,42,.12);
+}
+
+.stepTop{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.stepNum{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(79,93,184,.12);
+  border: 1px solid rgba(79,93,184,.18);
+  color: #3d4a9e;
+  font-weight: 950;
+  display: grid;
+  place-items: center;
+}
+
+.stepMeta{
+  display: grid;
+  gap: 2px;
+}
+
+.stepTitle{
+  font-weight: 900;
+  font-size: 16px;
+  color: rgba(15,23,42,.92);
+  letter-spacing: -.01em;
+}
+
+.stepSubtitle{
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(100,116,139,.95);
+}
+
+.stepDesc{
+  position: relative;
+  margin: 0 0 12px;
+  color: rgba(51,65,85,.95);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.stepList{
+  position: relative;
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(100,116,139,.95);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.stepList li{
+  margin-bottom: 8px;
+}
+
+.stepList li::marker{
+  color: rgba(79,93,184,.95);
+}
+
+/* ============ Outcomes ============ */
+.outcomes{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 16px;
+}
+
+.outcome{
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(15,23,42,.08);
+  border-radius: 18px;
+  padding: 20px 18px;
+  box-shadow: 0 16px 38px rgba(15,23,42,.08);
+}
+
+.outcomeTitle{
+  font-weight: 950;
+  color: rgba(15,23,42,.95);
+  margin-bottom: 8px;
+  letter-spacing: -.01em;
+}
+
+.outcomeDesc{
+  margin: 0;
+  color: rgba(100,116,139,.95);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* ============ RWD ============ */
+@media (max-width: 992px){
+  .heroGrid{ grid-template-columns: 1fr; }
+  .visual{
+    border-right: 0;
+    border-bottom: 1px solid rgba(15,23,42,.06);
+    min-height: 220px;
+    align-items: center;
+  }
+  .content{ padding: 22px 18px; }
+  .points{ grid-template-columns: 1fr; }
+  .stepsGrid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .outcomes{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px){
+  .stepsGrid{ grid-template-columns: 1fr; }
+}
