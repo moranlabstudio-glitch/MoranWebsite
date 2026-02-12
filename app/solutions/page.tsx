@@ -128,8 +128,7 @@ export default function SolutionsPage() {
             <span className="showcase-header__en">Products</span>
             <h2 className="showcase-header__title">產品介紹</h2>
             <p className="showcase-header__desc">
-              為企業提供完整的數位解決方案，從智能客服到企業資源管理，全方位支援企業數位化需求。
-            </p>
+              為企業提供完整的數位解決方案，從智能客服到企業資源管理，全方位支援企業數位化需求            </p>
           </div>
           <div className="showcase-grid">
             {products.map((p) => (

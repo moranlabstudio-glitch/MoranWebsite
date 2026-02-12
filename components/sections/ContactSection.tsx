@@ -53,8 +53,7 @@ export default function ContactSection({ asPageTitle }: ContactSectionProps) {
           <div className="contact-page__left">
             <TitleTag className="contact-page__title">諮詢服務</TitleTag>
             <p className="contact-page__desc">
-              不論您是否已有具體規劃，或僅有初步想法，都歡迎留下聯絡資訊與簡要描述，我們將儘速與您聯繫。
-            </p>
+              不論您是否已有具體規劃，或僅有初步想法，都歡迎留下聯絡資訊與簡要描述，我們將儘速與您聯繫            </p>
             <div className="contact-page__img">
               <Image
                 src="/images/ContactUs.png"

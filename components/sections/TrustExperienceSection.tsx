@@ -15,7 +15,7 @@ export default function TrustExperienceSection() {
           <ScrollReveal direction="right" delay={150}>
             <div className="media-block__body">
               <h3>以實務導入經驗為基礎，專注於「能用、好用、可維運」</h3>
-              <p>我們以溫和但務實的節奏，陪你把需求說清楚、把系統做穩，並確保上線後能被團隊真正使用。</p>
+              <p>我們以溫和但務實的節奏，陪你把需求說清楚、把系統做穩，並確保上線後能被團隊真正使用</p>
               <ul className="list">
                 <li>大型系統導入經驗：重視可靠性、資安與跨系統整合</li>
                 <li>專案管理與文件規範：節奏清楚、可驗收、可追溯</li>

@@ -8,7 +8,7 @@ const services = [
   {
     num: "01",
     title: "平台導入與數位顧問服務",
-    desc: "從現況盤點出發，協助釐清流程斷點與優先順序，設計可落地的導入路徑，讓營運更順、更穩。",
+    desc: "從現況盤點出發，協助釐清流程斷點與優先順序，設計可落地的導入路徑，讓營運更順、更穩",
     tags: ["現況盤點", "流程優化", "導入規劃"],
     accent: "svc-card--blue",
     href: "/services#svc-integration",
@@ -22,7 +22,7 @@ const services = [
   {
     num: "02",
     title: "智能客服與雛型演示",
-    desc: "以可操作的雛型與情境演示，讓需求在早期就對齊，降低試錯成本，確保後續開發方向正確。",
+    desc: "以可操作的雛型與情境演示，讓需求在早期就對齊，降低試錯成本，確保後續開發方向正確",
     tags: ["雛型演示", "需求對齊", "情境模擬"],
     accent: "svc-card--purple",
     href: "/services#svc-consulting",
@@ -35,7 +35,7 @@ const services = [
   {
     num: "03",
     title: "客製開發與測試部署",
-    desc: "以分階段交付與可驗收里程碑推進，涵蓋開發、測試與上線準備，讓系統穩定可維運。",
+    desc: "以分階段交付與可驗收里程碑推進，涵蓋開發、測試與上線準備，讓系統穩定可維運",
     tags: ["分階段交付", "測試驗收", "上線部署"],
     accent: "svc-card--cyan",
     href: "/services#svc-development",
@@ -49,7 +49,7 @@ const services = [
   {
     num: "04",
     title: "系統整合與維運優化",
-    desc: "整合既有系統與資料流，上線後提供監測、維運與持續優化，確保長期穩定與可擴充。",
+    desc: "整合既有系統與資料流，上線後提供監測、維運與持續優化，確保長期穩定與可擴充",
     tags: ["系統整合", "數據監測", "持續優化"],
     accent: "svc-card--indigo",
     href: "/services#svc-automation",
@@ -70,7 +70,7 @@ export default function ServicesSection() {
         <SectionTitleBlock
           subtitleEn="Services"
           title="服務項目"
-          desc="以顧問式方法協助企業從流程、資料到系統整合，導入 AI 與自動化，打造可維運、可擴充的營運基礎。"
+          desc="以顧問式方法協助企業從流程、資料到系統整合，導入 AI 與自動化，打造可維運、可擴充的營運基礎"
         />
         <div className="svc-grid">
           {services.map((s, i) => (

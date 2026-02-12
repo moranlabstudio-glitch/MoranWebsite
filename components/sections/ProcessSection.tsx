@@ -14,7 +14,7 @@ const steps = [
     num: "01",
     title: "顧問諮詢",
     subtitle: "Consultation",
-    desc: "深入了解業務痛點與現行流程，盤點可導入場景，提供可落地的建議與初步方案。",
+    desc: "深入了解業務痛點與現行流程，盤點可導入場景，提供可落地的建議與初步方案",
     deliverables: ["痛點訪談", "場景盤點", "初步方案"],
     accent: "pf-card--teal",
   },
@@ -29,7 +29,7 @@ const steps = [
     num: "02",
     title: "雛型演示",
     subtitle: "Prototyping",
-    desc: "以系統雛型進行演示，與團隊共同探尋完整需求，確認功能範圍與優先順序。",
+    desc: "以系統雛型進行演示，與團隊共同探尋完整需求，確認功能範圍與優先順序",
     deliverables: ["原型展示", "需求確認", "範圍定義"],
     accent: "pf-card--indigo",
   },
@@ -43,7 +43,7 @@ const steps = [
     num: "03",
     title: "測試部署",
     subtitle: "Deployment",
-    desc: "進入開發階段，完成測試與正式環境的階段性部署，確保系統穩定上線。",
+    desc: "進入開發階段，完成測試與正式環境的階段性部署，確保系統穩定上線",
     deliverables: ["迭代開發", "環境部署", "驗收測試"],
     accent: "pf-card--amber",
   },
@@ -58,7 +58,7 @@ const steps = [
     num: "04",
     title: "調整優化",
     subtitle: "Optimization",
-    desc: "持續維運監測，根據數據分析結果進行優化調整，讓系統效益逐步放大。",
+    desc: "持續維運監測，根據數據分析結果進行優化調整，讓系統效益逐步放大",
     deliverables: ["數據監測", "效能分析", "持續優化"],
     accent: "pf-card--emerald",
   },
@@ -70,7 +70,7 @@ export default function ProcessSection() {
       <SectionTitleBlock
         subtitleEn="Implementation"
         title="系統導入流程"
-        desc="專案自顧問諮詢展開，透過系統演示釐清需求後，分階段完成開發、測試與正式部署。"
+        desc="專案自顧問諮詢展開，透過系統演示釐清需求後，分階段完成開發、測試與正式部署"
       />
       <div className="pf-grid">
         {steps.map((step, i) => (

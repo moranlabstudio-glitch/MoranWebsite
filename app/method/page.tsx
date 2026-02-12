@@ -9,35 +9,35 @@ const steps = [
     num: "01",
     title: "需求盤點",
     subtitle: "Problem Discovery",
-    desc: "盤點流程、資料、痛點與成功指標，將「想做」轉成可衡量的「要解決什麼」。",
+    desc: "盤點流程、資料、痛點與成功指標，將「想做」轉成可衡量的「要解決什麼」",
     bullets: ["流程與角色釐清", "資料來源與落點", "KPI / 成功定義"],
   },
   {
     num: "02",
     title: "架構設計",
     subtitle: "System Design",
-    desc: "定義資料流、權限、介面與知識結構，先把「可營運」與「可維運」設計到位。",
+    desc: "定義資料流、權限、介面與知識結構，先把「可營運」與「可維運」設計到位",
     bullets: ["資料流與系統邊界", "權限與稽核", "知識結構與版本策略"],
   },
   {
     num: "03",
     title: "系統建置",
     subtitle: "Build & Integrate",
-    desc: "落地前後端與整合，串接 CRM / 工單 / DB，並建立日誌、監控與告警機制。",
+    desc: "落地前後端與整合，串接 CRM / 工單 / DB，並建立日誌、監控與告警機制",
     bullets: ["API / 串接整合", "日誌與監控", "壓測與風險清單"],
   },
   {
     num: "04",
     title: "分階上線",
     subtitle: "Launch",
-    desc: "以灰度上線控風險，依真實對話與案例回收修正，穩定逼近可用品質。",
+    desc: "以灰度上線控風險，依真實對話與案例回收修正，穩定逼近可用品質",
     bullets: ["灰度 / A-B 設定", "回饋回收機制", "品質門檻與驗收"],
   },
   {
     num: "05",
     title: "營運優化",
     subtitle: "Operate & Improve",
-    desc: "迭代知識與規則，提升命中率、補足例外情境，讓系統越用越準、越用越省。",
+    desc: "迭代知識與規則，提升命中率、補足例外情境，讓系統越用越準、越用越省",
     bullets: ["命中率與轉接率優化", "例外情境補齊", "知識維運流程交付"],
   },
 ];
@@ -50,7 +50,7 @@ export default function MethodPage() {
         <SectionTitle
           subtitleEn="Methodology"
           title="導入流程"
-          desc="我們以「可追蹤、可維運、可迭代」為原則，將想法轉成能融入日常流程的系統。"
+          desc="我們以「可追蹤、可維運、可迭代」為原則，將想法轉成能融入日常流程的系統"
         />
 
         {/* Hero / Overview */}

@@ -8,7 +8,7 @@ export default function UseCaseSection() {
       <SectionTitleBlock
         subtitleEn="Use Cases"
         title="適合的導入情境"
-        desc="先把最常被問、最耗時、最容易出錯的流程，交給系統處理。"
+        desc="先把最常被問、最耗時、最容易出錯的流程，交給系統處理"
       />
       <div className="block-split">
         <div className="block-panel">
