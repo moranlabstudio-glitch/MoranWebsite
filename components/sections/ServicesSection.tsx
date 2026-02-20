@@ -2,62 +2,63 @@ import Link from "next/link";
 import SectionTitleBlock from "./SectionTitle";
 import ScrollReveal from "@/components/ScrollReveal";
 
-/** 首頁：服務項目 — 顏色板塊，點擊跳轉至服務頁對應區塊 */
+/** 首頁：四大商業價值 */
 
-const services = [
+const values = [
   {
     num: "01",
-    title: "平台導入與數位顧問服務",
-    desc: "從現況盤點出發，協助釐清流程斷點與優先順序，設計可落地的導入路徑，讓營運更順、更穩",
-    tags: ["現況盤點", "流程優化", "導入規劃"],
+    title: "降低營運成本",
+    desc: "以流程自動化取代重複人工作業，降低人力依賴，讓團隊專注在成交與成長",
+    tags: ["流程自動化", "人力優化", "系統整合"],
     accent: "svc-card--blue",
-    href: "/services#svc-integration",
+    href: "/solutions",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" />
+        <path d="M12 8v4l3 3" />
       </svg>
     ),
   },
   {
     num: "02",
-    title: "智能客服與雛型演示",
-    desc: "以可操作的雛型與情境演示，讓需求在早期就對齊，降低試錯成本，確保後續開發方向正確",
-    tags: ["雛型演示", "需求對齊", "情境模擬"],
+    title: "提升營運效率",
+    desc: "將銷售、客服、行銷串成一條自動化流程，縮短回覆與成交週期",
+    tags: ["銷售自動化", "回應提速", "轉換率提升"],
     accent: "svc-card--purple",
-    href: "/services#svc-consulting",
+    href: "/solutions",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+        <polyline points="17 6 23 6 23 12" />
       </svg>
     ),
   },
   {
     num: "03",
-    title: "客製開發與測試部署",
-    desc: "以分階段交付與可驗收里程碑推進，涵蓋開發、測試與上線準備，讓系統穩定可維運",
-    tags: ["分階段交付", "測試驗收", "上線部署"],
+    title: "數據驅動決策",
+    desc: "把關鍵數據集中並即時可視化，讓管理層用 KPI 做判斷、用預測做規劃",
+    tags: ["即時分析", "KPI 監控", "決策支援"],
     accent: "svc-card--cyan",
-    href: "/services#svc-development",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="16 18 22 12 16 6" />
-        <polyline points="8 6 2 12 8 18" />
-      </svg>
-    ),
-  },
-  {
-    num: "04",
-    title: "系統整合與維運優化",
-    desc: "整合既有系統與資料流，上線後提供監測、維運與持續優化，確保長期穩定與可擴充",
-    tags: ["系統整合", "數據監測", "持續優化"],
-    accent: "svc-card--indigo",
-    href: "/services#svc-automation",
+    href: "/solutions",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <line x1="18" y1="20" x2="18" y2="10" />
         <line x1="12" y1="20" x2="12" y2="4" />
         <line x1="6" y1="20" x2="6" y2="14" />
+      </svg>
+    ),
+  },
+  {
+    num: "04",
+    title: "建立自動化營運系統",
+    desc: "建立可持續運作的智能中樞，降低對個人經驗與人員異動的依賴",
+    tags: ["智能中樞", "持續成長", "穩定擴充"],
+    accent: "svc-card--indigo",
+    href: "/solutions",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <path d="M8 21h8M12 17v4" />
       </svg>
     ),
   },
@@ -68,12 +69,12 @@ export default function ServicesSection() {
     <section className="svc-section">
       <div className="container">
         <SectionTitleBlock
-          subtitleEn="Services"
-          title="服務項目"
-          desc="以顧問式方法協助企業從流程、資料到系統整合，導入 AI 與自動化，打造可維運、可擴充的營運基礎"
+          subtitleEn="Business Value"
+          title="四大商業價值"
+          desc="我們協助企業以 AI 智能營運系統取代人工流程，從降低成本到數據決策，創造可量化的企業成長動能"
         />
         <div className="svc-grid">
-          {services.map((s, i) => (
+          {values.map((s, i) => (
             <ScrollReveal key={s.num} delay={i * 120}>
               <Link href={s.href} className={`svc-card ${s.accent}`}>
                 <div className="svc-card__header">

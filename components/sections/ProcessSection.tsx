@@ -2,64 +2,63 @@ import SectionBlock from "./SectionBlock";
 import SectionTitleBlock from "./SectionTitle";
 import ScrollReveal from "@/components/ScrollReveal";
 
-/** 首頁：系統導入流程 — 2×2 色彩卡片 */
+/** 首頁：導入後成果 — 2×2 色彩卡片 */
 
-const steps = [
+const outcomes = [
   {
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        <line x1="12" y1="1" x2="12" y2="23" />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
       </svg>
     ),
     num: "01",
-    title: "顧問諮詢",
-    subtitle: "Consultation",
-    desc: "深入了解業務痛點與現行流程，盤點可導入場景，提供可落地的建議與初步方案",
-    deliverables: ["痛點訪談", "場景盤點", "初步方案"],
+    title: "降低人力成本 30~60%",
+    subtitle: "Cost Reduction",
+    desc: "AI 自動化處理重複性工作，大幅減少人工作業時間，企業可將人力投入更高價值業務",
+    deliverables: ["自動化流程", "人力重配", "成本可量化"],
     accent: "pf-card--teal",
   },
   {
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-        <line x1="8" y1="21" x2="16" y2="21" />
-        <line x1="12" y1="17" x2="12" y2="21" />
+        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+        <polyline points="17 6 23 6 23 12" />
       </svg>
     ),
     num: "02",
-    title: "雛型演示",
-    subtitle: "Prototyping",
-    desc: "以系統雛型進行演示，與團隊共同探尋完整需求，確認功能範圍與優先順序",
-    deliverables: ["原型展示", "需求確認", "範圍定義"],
+    title: "提升銷售轉換率",
+    subtitle: "Sales Growth",
+    desc: "AI 智能跟進與自動成交流程，確保每位潛在客戶都被即時回應，提高整體成交機率",
+    deliverables: ["智能跟進", "自動報價", "成交加速"],
     accent: "pf-card--indigo",
   },
   {
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="16 18 22 12 16 6" />
-        <polyline points="8 6 2 12 8 18" />
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="8" x2="12" y2="12" />
+        <line x1="12" y1="16" x2="12.01" y2="16" />
       </svg>
     ),
     num: "03",
-    title: "測試部署",
-    subtitle: "Deployment",
-    desc: "進入開發階段，完成測試與正式環境的階段性部署，確保系統穩定上線",
-    deliverables: ["迭代開發", "環境部署", "驗收測試"],
+    title: "即時決策分析",
+    subtitle: "Real-time Insight",
+    desc: "整合企業資料即時提供 KPI 洞察，讓管理層隨時掌握業績、流程與市場狀況",
+    deliverables: ["即時報表", "KPI 追蹤", "預測分析"],
     accent: "pf-card--amber",
   },
   {
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="18" y1="20" x2="18" y2="10" />
-        <line x1="12" y1="20" x2="12" y2="4" />
-        <line x1="6" y1="20" x2="6" y2="14" />
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
       </svg>
     ),
     num: "04",
-    title: "調整優化",
-    subtitle: "Optimization",
-    desc: "持續維運監測，根據數據分析結果進行優化調整，讓系統效益逐步放大",
-    deliverables: ["數據監測", "效能分析", "持續優化"],
+    title: "全自動化營運系統",
+    subtitle: "Autonomous Operations",
+    desc: "打造可持續自動運作的企業智能中樞，讓企業穩定成長，不受人力限制與人員異動影響",
+    deliverables: ["24h 自動運作", "穩定擴充", "持續成長"],
     accent: "pf-card--emerald",
   },
 ];
@@ -68,26 +67,26 @@ export default function ProcessSection() {
   return (
     <SectionBlock>
       <SectionTitleBlock
-        subtitleEn="Implementation"
-        title="系統導入流程"
-        desc="專案自顧問諮詢展開，透過系統演示釐清需求後，分階段完成開發、測試與正式部署"
+        subtitleEn="Results"
+        title="導入後的成果"
+        desc="企業導入 AI 智能營運系統後，可量化的成效立即反映在成本、效率與業績上"
       />
       <div className="pf-grid">
-        {steps.map((step, i) => (
-          <ScrollReveal key={step.num} delay={i * 120}>
-            <div className={`pf-card ${step.accent}`}>
-              <div className="pf-card__watermark" aria-hidden="true">{step.num}</div>
+        {outcomes.map((outcome, i) => (
+          <ScrollReveal key={outcome.num} delay={i * 120}>
+            <div className={`pf-card ${outcome.accent}`}>
+              <div className="pf-card__watermark" aria-hidden="true">{outcome.num}</div>
               <div className="pf-card__head">
-                <div className="pf-card__icon">{step.icon}</div>
+                <div className="pf-card__icon">{outcome.icon}</div>
                 <div className="pf-card__meta">
-                  <span className="pf-card__num">STEP {step.num}</span>
-                  <span className="pf-card__subtitle">{step.subtitle}</span>
+                  <span className="pf-card__num">成果 {outcome.num}</span>
+                  <span className="pf-card__subtitle">{outcome.subtitle}</span>
                 </div>
               </div>
-              <h3 className="pf-card__title">{step.title}</h3>
-              <p className="pf-card__desc">{step.desc}</p>
+              <h3 className="pf-card__title">{outcome.title}</h3>
+              <p className="pf-card__desc">{outcome.desc}</p>
               <div className="pf-card__tags">
-                {step.deliverables.map((d) => (
+                {outcome.deliverables.map((d) => (
                   <span className="pf-card__tag" key={d}>{d}</span>
                 ))}
               </div>

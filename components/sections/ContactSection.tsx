@@ -107,7 +107,7 @@ export default function ContactSection({ asPageTitle }: ContactSectionProps) {
                   maxLength={550}
                   required
                 />
-                <span className="contact-form__hint">請描述需求，我們將根據行業別與類型，指派專人與您聯繫。</span>
+                <span className="contact-form__hint">請簡述您的情境（產業/目前流程/痛點/期望目標），我們將依需求安排顧問與您確認導入範圍與優先順序。</span>
               </label>
               <button className="btn primary contact-form__submit" type="submit" disabled={loading}>
                 {loading ? "送出中..." : "送出"}

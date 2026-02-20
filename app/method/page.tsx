@@ -7,38 +7,48 @@ export const metadata = { title: "導入流程" };
 const steps = [
   {
     num: "01",
-    title: "需求盤點",
-    subtitle: "Problem Discovery",
-    desc: "盤點流程、資料、痛點與成功指標，將「想做」轉成可衡量的「要解決什麼」",
-    bullets: ["流程與角色釐清", "資料來源與落點", "KPI / 成功定義"],
+    title: "現況盤點與目標設定",
+    subtitle: "Discovery & Goals",
+    desc: "深入了解企業現行流程與痛點，釐清業務目標與成功指標，將成長需求轉化為可執行的 AI 導入策略",
+    bullets: ["業務目標與 KPI 定義", "流程痛點盤點", "AI 導入優先排序"],
+    color: "#4f5db8",
+    colorBg: "rgba(79,93,184,0.10)",
   },
   {
     num: "02",
-    title: "架構設計",
-    subtitle: "System Design",
-    desc: "定義資料流、權限、介面與知識結構，先把「可營運」與「可維運」設計到位",
-    bullets: ["資料流與系統邊界", "權限與稽核", "知識結構與版本策略"],
+    title: "AI 架構規劃",
+    subtitle: "Architecture Design",
+    desc: "規劃 AI 智能營運架構，設計資料流、系統整合方案與自動化邏輯，確保系統上線後能真正融入企業日常營運",
+    bullets: ["系統架構與資料流設計", "自動化流程規劃", "整合方案與邊界定義"],
+    color: "#7c3aed",
+    colorBg: "rgba(124,58,237,0.10)",
   },
   {
     num: "03",
-    title: "系統建置",
+    title: "系統建置與整合",
     subtitle: "Build & Integrate",
-    desc: "落地前後端與整合，串接 CRM / 工單 / DB，並建立日誌、監控與告警機制",
-    bullets: ["API / 串接整合", "日誌與監控", "壓測與風險清單"],
+    desc: "落地 AI 系統開發，串接 CRM、行銷平台、ERP 與既有系統，建立完整的自動化工作流與監控機制",
+    bullets: ["AI 系統開發與測試", "多系統 API 整合", "自動化流程建置"],
+    color: "#0891b2",
+    colorBg: "rgba(8,145,178,0.10)",
   },
   {
     num: "04",
-    title: "分階上線",
-    subtitle: "Launch",
-    desc: "以灰度上線控風險，依真實對話與案例回收修正，穩定逼近可用品質",
-    bullets: ["灰度 / A-B 設定", "回饋回收機制", "品質門檻與驗收"],
+    title: "分階上線與驗收",
+    subtitle: "Launch & Validate",
+    desc: "以分階段上線控制導入風險，依實際業務數據驗收成效，確保系統達到預期的降本增效目標",
+    bullets: ["分階段上線策略", "業務成效驗收", "問題修正與調校"],
+    color: "#d97706",
+    colorBg: "rgba(217,119,6,0.10)",
   },
   {
     num: "05",
-    title: "營運優化",
-    subtitle: "Operate & Improve",
-    desc: "迭代知識與規則，提升命中率、補足例外情境，讓系統越用越準、越用越省",
-    bullets: ["命中率與轉接率優化", "例外情境補齊", "知識維運流程交付"],
+    title: "持續優化與成長",
+    subtitle: "Optimize & Grow",
+    desc: "依業務成長持續優化 AI 系統，擴展應用場景，讓智能營運中樞越用越精準，為企業創造持續成長動能",
+    bullets: ["成效數據分析", "AI 模型持續優化", "功能擴展與規模化"],
+    color: "#059669",
+    colorBg: "rgba(5,150,105,0.10)",
   },
 ];
 
@@ -50,45 +60,45 @@ export default function MethodPage() {
         <SectionTitle
           subtitleEn="Methodology"
           title="導入流程"
-          desc="我們以「可追蹤、可維運、可迭代」為原則，將想法轉成能融入日常流程的系統"
+          desc="以成果為導向，從企業目標出發，五個步驟完成 AI 智能營運系統建置，確保每個環節都能看到實際業務成效"
         />
 
         {/* Hero / Overview */}
         <section className={styles.hero} aria-label="導入流程概覽">
           <div className={styles.heroGrid}>
             <div className={styles.visual} aria-hidden="true" style={{ padding: 0, display: 'block', overflow: 'hidden' }}>
-              <img src="/images/7.jpg" alt="導入流程" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <img src="/images/7.jpg" alt="AI 智能營運導入流程" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
 
             <div className={styles.content}>
               <div className={styles.badge}>MORAN Method · 5 Steps</div>
-              <h3 className={styles.title}>從盤點到營運，完整閉環</h3>
+              <h3 className={styles.title}>從戰略到落地，創造可量化成果</h3>
               <p className={styles.desc}>
-                你不需要理解底層參數；你需要的是一套可放進流程、可交付給團隊維運的系統
-                我們用五個步驟，確保上線後仍能持續成長
+                企業老闆不需要了解 AI 技術細節，需要的是一套能降低成本、提升效率、驅動成長的智能營運系統
+                我們用五個步驟，確保 AI 系統真正融入企業，持續創造業務價值
               </p>
 
               <div className={styles.points}>
                 <div className={styles.point}>
-                  <div className={styles.pointK}>流程先行</div>
-                  <div className={styles.pointV}>先把角色、權限、資料落點說清楚</div>
+                  <div className={styles.pointK}>成果導向</div>
+                  <div className={styles.pointV}>以 KPI 與業務目標驅動每個導入決策</div>
                 </div>
                 <div className={styles.point}>
-                  <div className={styles.pointK}>KPI 驅動</div>
-                  <div className={styles.pointV}>以解決率、轉接率、工時節省量化成效</div>
+                  <div className={styles.pointK}>風險可控</div>
+                  <div className={styles.pointV}>分階段驗收，確保每步都能看到成效</div>
                 </div>
                 <div className={styles.point}>
-                  <div className={styles.pointK}>案例回收</div>
-                  <div className={styles.pointV}>用真實對話與例外情境迭代品質</div>
+                  <div className={styles.pointK}>持續成長</div>
+                  <div className={styles.pointV}>系統隨業務擴展，持續優化與規模化</div>
                 </div>
               </div>
-           
+
               <div className={styles.actions}>
                 <Link className="btn primary" href="/contact">
-                  了解導入方式
+                  預約免費顧問諮詢
                 </Link>
                 <Link className="btn" href="/solutions">
-                  先看產品介紹
+                  了解產品方案
                 </Link>
               </div>
             </div>
@@ -98,30 +108,63 @@ export default function MethodPage() {
         {/* Steps */}
         <section className={styles.steps} aria-label="五步驟導入流程">
           <div className={styles.stepsHead}>
-            <h3 className={styles.stepsTitle}>五步驟導入流程</h3>
+            <h3 className={styles.stepsTitle}>五步驟 AI 導入流程</h3>
             <p className={styles.stepsSub}>
-              每一步都有明確輸出物與可驗收項目，避免「做完看不到成效」
+              每個步驟都有明確的業務成果與驗收指標，從戰略規劃到系統落地，確保投資產生實際回報
             </p>
           </div>
 
           <div className={styles.stepsGrid}>
             {steps.map((s) => (
-              <article className={styles.stepCard} key={s.num}>
-                <div className={styles.stepTop}>
-                  <div className={styles.stepNum}>{s.num}</div>
-                  <div className={styles.stepMeta}>
-                    <div className={styles.stepTitle}>{s.title}</div>
-                    <div className={styles.stepSubtitle}>{s.subtitle}</div>
+              <article className={styles.stepCard} key={s.num} style={{ padding: 0, overflow: "hidden" }}>
+                {/* 彩色標題區塊 */}
+                <div style={{
+                  position: "relative",
+                  zIndex: 1,
+                  background: s.color,
+                  padding: "18px 20px 16px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: 8,
+                }}>
+                  <div>
+                    <div style={{
+                      fontSize: 10,
+                      fontWeight: 700,
+                      color: "rgba(255,255,255,0.65)",
+                      letterSpacing: "0.14em",
+                      textTransform: "uppercase",
+                      marginBottom: 6,
+                    }}>
+                      {s.subtitle}
+                    </div>
+                    <div className={styles.stepTitle} style={{ color: "#ffffff", fontSize: 15 }}>
+                      {s.title}
+                    </div>
+                  </div>
+                  <div style={{
+                    fontSize: 44,
+                    fontWeight: 900,
+                    color: "rgba(255,255,255,0.18)",
+                    lineHeight: 1,
+                    flexShrink: 0,
+                    letterSpacing: "-0.03em",
+                    userSelect: "none",
+                  }}>
+                    {s.num}
                   </div>
                 </div>
 
-                <p className={styles.stepDesc}>{s.desc}</p>
-
-                <ul className={styles.stepList}>
-                  {s.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
+                {/* 卡片內容 */}
+                <div style={{ position: "relative", zIndex: 1, padding: "14px 18px 16px" }}>
+                  <p className={styles.stepDesc} style={{ margin: "0 0 10px" }}>{s.desc}</p>
+                  <ul className={styles.stepList}>
+                    {s.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                </div>
               </article>
             ))}
           </div>

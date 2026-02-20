@@ -7,11 +7,11 @@ import { useEffect, useState, useCallback } from "react";
 
 const links = [
   { href: "/", label: "首頁" },
-  { href: "/about", label: "公司介紹" },
-  { href: "/services", label: "服務項目" },
-  { href: "/solutions", label: "產品介紹" },
+  { href: "/about", label: "關於我們" },
+  { href: "/services", label: "AI 解決方案" },
+  { href: "/solutions", label: "產品方案" },
   { href: "/method", label: "導入流程" },
-  { href: "/contact", label: "聯絡我們", primary: true },
+  { href: "/contact", label: "免費諮詢", primary: true },
 ];
 
 export default function Navbar() {

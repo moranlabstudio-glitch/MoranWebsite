@@ -19,25 +19,27 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          {/* Column 1 - 服務項目 */}
+          {/* Column 1 - AI 解決方案 */}
           <div className="footer-col">
-            <h4 className="footer-heading">服務項目</h4>
+            <h4 className="footer-heading">AI 解決方案</h4>
             <nav className="footer-links">
-              <Link href="/services#svc-integration" className="footer-link">系統整合與平台建置</Link>
-              <Link href="/services#svc-consulting" className="footer-link">數位轉型顧問</Link>
-              <Link href="/services#svc-development" className="footer-link">跨平台應用開發</Link>
-              <Link href="/services#svc-analytics" className="footer-link">資料分析與決策</Link>
-              <Link href="/services#svc-automation" className="footer-link">流程自動化</Link>
-              <Link href="/solutions" className="footer-link">客製智能系統</Link>
+              <Link href="/services#svc-integration" className="footer-link">AI 智能營運導入</Link>
+              <Link href="/services#svc-consulting" className="footer-link">AI 業務成長顧問</Link>
+              <Link href="/services#svc-development" className="footer-link">AI Agent 系統開發</Link>
+              <Link href="/services#svc-analytics" className="footer-link">營運數據分析</Link>
+              <Link href="/services#svc-automation" className="footer-link">全流程自動化</Link>
             </nav>
           </div>
 
-          {/* Column 2 - 解決方案 */}
+          {/* Column 2 - 產品方案 */}
           <div className="footer-col">
-            <h4 className="footer-heading">解決方案</h4>
+            <h4 className="footer-heading">產品方案</h4>
             <nav className="footer-links">
-              <Link href="/solutions" className="footer-link">產品方案</Link>
-              <Link href="/method" className="footer-link">導入方法</Link>
+              <Link href="/solutions#crm" className="footer-link">AI CRM + 自動成交</Link>
+              <Link href="/solutions#ai-service" className="footer-link">AI 客服與知識助理</Link>
+              <Link href="/solutions#marketing" className="footer-link">AI 行銷自動化</Link>
+              <Link href="/solutions#analytics" className="footer-link">AI 決策分析</Link>
+              <Link href="/method" className="footer-link">導入流程</Link>
             </nav>
           </div>
 
@@ -46,7 +48,7 @@ export default function Footer() {
             <h4 className="footer-heading">公司訊息</h4>
             <nav className="footer-links">
               <Link href="/about" className="footer-link">關於我們</Link>
-              <Link href="/contact" className="footer-link">聯絡我們</Link>
+              <Link href="/contact" className="footer-link">免費顧問諮詢</Link>
             </nav>
           </div>
 

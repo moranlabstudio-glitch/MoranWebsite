@@ -710,9 +710,19 @@ a {
 
 .heroLead {
   margin: 0;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: clamp(16px, 1.4vw, 20px);
-  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(17px, 1.5vw, 22px);
+  line-height: 1.6;
+  max-width: 40rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.heroDesc {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: 1.8;
   max-width: 38rem;
 }
 
@@ -2485,6 +2495,11 @@ a {
 .showcase-card__visual--sky {
   background: linear-gradient(145deg, #e0f2fe 0%, #7dd3fc 50%, #38bdf8 100%);
   color: #0369a1;
+}
+
+.showcase-card__visual--violet {
+  background: linear-gradient(145deg, #f3e8ff 0%, #d8b4fe 50%, #a855f7 100%);
+  color: #6b21a8;
 }
 
 /* SVG 專業圖示 */
